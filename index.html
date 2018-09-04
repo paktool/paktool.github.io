@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>BMW-EA-840</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Global-Lokal Axes Konversion Tool">
+  <meta name="author" content="Aravind Narayanan">
+  <meta name="keywords" content="Aravind Narayanan, BMW-EA-840" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Thithipu">
+  <link rel="apple-touch-icon" sizes="57x57" href="images/icons/apple-icon-57x57.jpg">
+  <link rel="apple-touch-icon" sizes="60x60" href="images/icons/apple-icon-60x60.jpg">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/icons/apple-icon-72x72.jpg">
+  <link rel="apple-touch-icon" sizes="76x76" href="images/icons/apple-icon-76x76.jpg">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/icons/apple-icon-114x114.jpg">
+  <link rel="apple-touch-icon" sizes="120x120" href="images/icons/apple-icon-120x120.jpg">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/icons/apple-icon-144x144.jpg">
+  <link rel="apple-touch-icon" sizes="152x152" href="images/icons/apple-icon-152x152.jpg">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-icon-180x180.jpg">
+  <link rel="manifest" href="manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="images/icons/icon-144x144.png">
+  <meta name="theme-color" content="#48a3d0">
+  
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style type="text/css">
+    body{
+      background-color: #48a3d0;
+    }
+    .brand-img{
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+    }
+    .brand-box{
+      display: inline-block;
+      width: 100px;
+      height: 100px;
+    }
+    .main-box{
+      display: inline-block;
+      width: 250px;
+      height: 250px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container-fluid" style="background-color: #ffffff;">
+    <div class="col-xs-6 text-center" style="padding-top: 2px;padding-bottom: 2px;">
+      <div class="brand-box">
+        <img src="images/bmw_logo.png" class="brand-img" alt="BMW-Logo">
+      </div>
+    </div>
+    <div class="col-xs-6" style="padding-top:35px; font-size: 18px;">
+      <p>BMW-EA-840</p>
+    </div>
+  </div>
+  
+  <div class="container-fluid text-center">
+    <h3 style="color: #ffffff;">Global-Lokal Axes Konversion Tool</h3>
+  </div>
+    
+  </div>
+  <div style="width: 90%;border-radius: 20px; background-color: #ffffff;margin: 0 5% 5% 5%; text-align: center; padding: 10px;">
+    <h2>Select Parent Axis</h2>
+    <select id="parent" style="width: 50%;">
+      <option value="default">--Select Axis--</option>
+      <option value="1">+ X</option>
+      <option value="2">- X</option>
+      <option value="3">+ Y</option>
+      <option value="4">- Y</option>
+      <option value="5">+ Z</option>
+      <option value="6">- Z</option>
+    </select><br>
+    <div class="main-box">
+      <img src="images/main.png" class="brand-img" alt="BMW-Logo">
+    </div>
+    <div id="children" style="background-color: #d9d9d9; ">
+    </div>
+    <h1 id="result">
+
+    </h1>
+  </div>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      const combination = {
+        1:{
+          1:"<p>1.1 answer line 1<br>answer line 2<br>answer line 3</p>",
+          2:"<p>1.2 answer line 1<br>answer line 2<br>answer line 3</p>",
+          3:"<p>1.3 answer line 1<br>answer line 2<br>answer line 3</p>",
+          4:"<p>1.4 answer line 1<br>answer line 2<br>answer line 3</p>"},
+        2:{
+          1:"<p>2.1 answer line 1<br>answer line 2<br>answer line 3</p>",
+          2:"<p>2.2 answer line 1<br>answer line 2<br>answer line 3</p>",
+          3:"<p>2.3 answer line 1<br>answer line 2<br>answer line 3</p>",
+          4:"<p>2.4 answer line 1<br>answer line 2<br>answer line 3</p>"},
+        3:{
+          1:"<p>3.1 answer line 1<br>answer line 2<br>answer line 3</p>",
+          2:"<p>3.2 answer line 1<br>answer line 2<br>answer line 3</p>",
+          3:"<p>3.3 answer line 1<br>answer line 2<br>answer line 3</p>",
+          4:"<p>3.4 answer line 1<br>answer line 2<br>answer line 3</p>"},
+        4:{
+          1:"<p>4.1 answer line 1<br>answer line 2<br>answer line 3</p>",
+          2:"<p>4.2 answer line 1<br>answer line 2<br>answer line 3</p>",
+          3:"<p>4.3 answer line 1<br>answer line 2<br>answer line 3</p>",
+          4:"<p>4.4 answer line 1<br>answer line 2<br>answer line 3</p>"},
+        5:{
+          1:"<p>5.1 answer line 1<br>answer line 2<br>answer line 3</p>",
+          2:"<p>5.2 answer line 1<br>answer line 2<br>answer line 3</p>",
+          3:"<p>5.3 answer line 1<br>answer line 2<br>answer line 3</p>",
+          4:"<p>5.4 answer line 1<br>answer line 2<br>answer line 3</p>"},
+        6:{
+          1:"<p>6.1 answer line 1<br>answer line 2<br>answer line 3</p>",
+          2:"<p>6.2 answer line 1<br>answer line 2<br>answer line 3</p>",
+          3:"<p>6.3 answer line 1<br>answer line 2<br>answer line 3</p>",
+          4:"<p>6.4 answer line 1<br>answer line 2<br>answer line 3</p>"}
+      };
+      $("#parent").on("change", function(event) {
+        $("#children").html("");
+        $("#result").html("");
+        var parent = event.target.value
+        if(parent != "default"){
+          $("#children").append("<h3 id='select'>Click one child from below Images</h3><img id='1' src='images/1.png' style='margin: 3px;'><img id='2' src='images/2.png' style='margin: 3px;'><img id='3' src='images/3.png' style='margin: 3px;'><img id='4' src='images/4.png' style='margin: 3px;'>");
+        }
+      });
+      $("#children").on("click", function(event) {
+        $("#result").html("");
+        var child = event.target.id
+        if(child != "select" && child != "children"){
+          $("#result").append("<h3><b><u>Result</u></b></h3><br>" + combination[$("#parent").val()][child]);
+        }
+      });
+    });
+  </script>
+</body>
+</html>
