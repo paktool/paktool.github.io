@@ -1,10 +1,10 @@
 $(document).ready(function(){
   const combination = {
     1:{
-      1:"<p>Sensor Achsen = Prüfling Achsen<br>+X = +Z<br>+Y = +Y<br>+Z = +X</p>",
-      2:"<p>Sensor Achsen = Prüfling Achsen<br>+X = -Z<br>+Y = -Y<br>+Z = +X</p>",
-      3:"<p>Sensor Achsen = Prüfling Achsen<br>+X = -Y<br>+Y = +Z<br>+Z = +X</p>",
-      4:"<p>Sensor Achsen = Prüfling Achsen<br>+X = +Y<br>+Y = -Z<br>+Z = +X</p>"},
+      1:"<p> Sensor Achsen = Prüfling Achsen<br>+X = +Z<br>+Y = +Y<br>+Z = +X</p>",
+      2:"<p> Sensor Achsen = Prüfling Achsen<br>+X = -Z<br>+Y = -Y<br>+Z = +X</p>",
+      3:"<p> Sensor Achsen = Prüfling Achsen<br>+X = -Y<br>+Y = +Z<br>+Z = +X</p>",
+      4:"<p> Sensor Achsen = Prüfling Achsen<br>+X = +Y<br>+Y = -Z<br>+Z = +X</p>"},
     2:{
       1:"<p>Sensor Achsen = Prüfling Achsen<br>+X = +Z<br>+Y = -Y<br>+Z = -X</p>",
       2:"<p>Sensor Achsen = Prüfling Achsen<br>+X = -Z<br>+Y = +Y<br>+Z = -X</p>",
