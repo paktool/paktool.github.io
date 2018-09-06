@@ -1,35 +1,35 @@
 $(document).ready(function(){
   const combination = {
     1:{
-      1:"<p>1.1 answer line 1<br>answer line 2<br>answer line 3</p>",
-      2:"<p>1.2 answer line 1<br>answer line 2<br>answer line 3</p>",
-      3:"<p>1.3 answer line 1<br>answer line 2<br>answer line 3</p>",
-      4:"<p>1.4 answer line 1<br>answer line 2<br>answer line 3</p>"},
+      1:"<p>Sensor Achsen = Prüfling Achsen<br>+X = +Z<br>+Y = +Y<br>+Z = +X</p>",
+      2:"<p>Sensor Achsen = Prüfling Achsen<br>+X = -Z<br>+Y = -Y<br>+Z = +X</p>",
+      3:"<p>Sensor Achsen = Prüfling Achsen<br>+X = -Y<br>+Y = +Z<br>+Z = +X</p>",
+      4:"<p>Sensor Achsen = Prüfling Achsen<br>+X = +Y<br>+Y = -Z<br>+Z = +X</p>"},
     2:{
-      1:"<p>2.1 answer line 1<br>answer line 2<br>answer line 3</p>",
-      2:"<p>2.2 answer line 1<br>answer line 2<br>answer line 3</p>",
-      3:"<p>2.3 answer line 1<br>answer line 2<br>answer line 3</p>",
-      4:"<p>2.4 answer line 1<br>answer line 2<br>answer line 3</p>"},
+      1:"<p>Sensor Achsen = Prüfling Achsen<br>+X = +Z<br>+Y = -Y<br>+Z = -X</p>",
+      2:"<p>Sensor Achsen = Prüfling Achsen<br>+X = -Z<br>+Y = +Y<br>+Z = -X</p>",
+      3:"<p>Sensor Achsen = Prüfling Achsen<br>+X = +Y<br>+Y = +Z<br>+Z = -X</p>",
+      4:"<p>Sensor Achsen = Prüfling Achsen<br>+X = -Y<br>+Y = -Z<br>+Z = -X</p>"},
     3:{
-      1:"<p>3.1 answer line 1<br>answer line 2<br>answer line 3</p>",
-      2:"<p>3.2 answer line 1<br>answer line 2<br>answer line 3</p>",
-      3:"<p>3.3 answer line 1<br>answer line 2<br>answer line 3</p>",
-      4:"<p>3.4 answer line 1<br>answer line 2<br>answer line 3</p>"},
+      1:"<p>Sensor Achsen = Prüfling Achsen<br>+X = +Z<br>+Y = -X<br>+Z = +Y</p>",
+      2:"<p>Sensor Achsen = Prüfling Achsen<br>+X = -Z<br>+Y = +X<br>+Z = +Y</p>",
+      3:"<p>Sensor Achsen = Prüfling Achsen<br>+X = +X<br>+Y = +Z<br>+Z = +Y</p>",
+      4:"<p>Sensor Achsen = Prüfling Achsen<br>+X = -X<br>+Y = -Z<br>+Z = +Y</p>"},
     4:{
-      1:"<p>4.1 answer line 1<br>answer line 2<br>answer line 3</p>",
-      2:"<p>4.2 answer line 1<br>answer line 2<br>answer line 3</p>",
-      3:"<p>4.3 answer line 1<br>answer line 2<br>answer line 3</p>",
-      4:"<p>4.4 answer line 1<br>answer line 2<br>answer line 3</p>"},
+      1:"<p>Sensor Achsen = Prüfling Achsen<br>+X = +Z<br>+Y = +X<br>+Z = -Y</p>",
+      2:"<p>Sensor Achsen = Prüfling Achsen<br>+X = -Z<br>+Y = -X<br>+Z = -Y</p>",
+      3:"<p>Sensor Achsen = Prüfling Achsen<br>+X = -X<br>+Y = +Z<br>+Z = -Y</p>",
+      4:"<p>Sensor Achsen = Prüfling Achsen<br>+X = +X<br>+Y = -Z<br>+Z = -Y</p>"},
     5:{
-      1:"<p>5.1 answer line 1<br>answer line 2<br>answer line 3</p>",
-      2:"<p>5.2 answer line 1<br>answer line 2<br>answer line 3</p>",
-      3:"<p>5.3 answer line 1<br>answer line 2<br>answer line 3</p>",
-      4:"<p>5.4 answer line 1<br>answer line 2<br>answer line 3</p>"},
+      1:"<p>Sensor Achsen = Prüfling Achsen<br>+X = -X<br>+Y = +Y<br>+Z = +Z</p>",
+      2:"<p>Sensor Achsen = Prüfling Achsen<br>+X = +X<br>+Y = -Y<br>+Z = +Z</p>",
+      3:"<p>Sensor Achsen = Prüfling Achsen<br>+X = -Y<br>+Y = -X<br>+Z = +Z</p>",
+      4:"<p>Sensor Achsen = Prüfling Achsen<br>+X = +Y<br>+Y = +X<br>+Z = +Z</p>"},
     6:{
-      1:"<p>6.1 answer line 1<br>answer line 2<br>answer line 3</p>",
-      2:"<p>6.2 answer line 1<br>answer line 2<br>answer line 3</p>",
-      3:"<p>6.3 answer line 1<br>answer line 2<br>answer line 3</p>",
-      4:"<p>6.4 answer line 1<br>answer line 2<br>answer line 3</p>"}
+      1:"<p>Sensor Achsen = Prüfling Achsen<br>+X = -X<br>+Y = -Y<br>+Z = -Z</p>",
+      2:"<p>Sensor Achsen = Prüfling Achsen<br>+X = +X<br>+Y = +Y<br>+Z = -Z</p>",
+      3:"<p>Sensor Achsen = Prüfling Achsen<br>+X = +Y<br>+Y = -X<br>+Z = -Z</p>",
+      4:"<p>Sensor Achsen = Prüfling Achsen<br>+X = -Y<br>+Y = +X<br>+Z = -Z</p>"}
   };
   $("#parent").on("change", function(event) {
     $("#children").html("");
