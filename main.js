@@ -36,14 +36,14 @@ $(document).ready(function(){
     $("#result").html("");
     var parent = event.target.value
     if(parent != "default"){
-      $("#children").append("<h3 id='select'>Click one child from below Images</h3><img id='1' src='images/1.png' style='margin: 3px;'><img id='2' src='images/2.png' style='margin: 3px;'><img id='3' src='images/3.png' style='margin: 3px;'><img id='4' src='images/4.png' style='margin: 3px;'>");
+      $("#children").append("<h3 id='select'>Wählen Sie eine Sensorkonfiguration</h3><img id='1' src='images/1.png' style='margin: 3px;'><img id='2' src='images/2.png' style='margin: 3px;'><img id='3' src='images/3.png' style='margin: 3px;'><img id='4' src='images/4.png' style='margin: 3px;'>");
     }
   });
   $("#children").on("click", function(event) {
     $("#result").html("");
     var child = event.target.id
     if(child != "select" && child != "children"){
-      $("#result").append("<h3><b><u>Result</u></b></h3><br>" + combination[$("#parent").val()][child]);
+      $("#result").append("<h3><b><u>Ergebnis</u></b></h3><br>" + combination[$("#parent").val()][child]);
     }
   });
   $("#reset_btn").on("click", function(event){
